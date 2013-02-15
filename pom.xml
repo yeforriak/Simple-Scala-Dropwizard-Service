@@ -112,7 +112,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.hellodropwizard.HelloWorldService</mainClass>
+                                    <mainClass>com.teamyefos.scala.service.SimpleService</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
