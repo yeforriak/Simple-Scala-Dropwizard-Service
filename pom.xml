@@ -18,6 +18,7 @@
     </repositories>
 
     <pluginRepositories>
+
         <pluginRepository>
             <id>scala-tools.org</id>
             <name>Scala-Tools Maven2 Repository</name>
@@ -66,6 +67,15 @@
                 </executions>
                 <configuration>
                     <scalaVersion>${scala.version}</scalaVersion>
+                    <launchers>
+                        <launcher>
+                            <id>simple-service</id>
+                            <mainClass>com.teamyefos.scala.service.SimpleService</mainClass>
+                            <args>
+                                <arg>server</arg>
+                            </args>
+                        </launcher>
+                    </launchers>
                 </configuration>
             </plugin>
             <plugin>
@@ -121,15 +131,4 @@
             </plugin>
         </plugins>
     </build>
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.scala-tools</groupId>
-                <artifactId>maven-scala-plugin</artifactId>
-                <configuration>
-                    <scalaVersion>${scala.version}</scalaVersion>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
 </project>

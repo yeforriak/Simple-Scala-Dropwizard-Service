@@ -11,7 +11,7 @@ import resources.HelloWorldResource
 object SimpleService extends ScalaService[SimpleServiceConfiguration] {
 
   def initialize(bootstrap: Bootstrap[SimpleServiceConfiguration]) {
-    bootstrap.setName("example")
+    bootstrap.setName("simple-service")
     bootstrap.addBundle(new ScalaBundle)
   }
 
@@ -19,5 +19,4 @@ object SimpleService extends ScalaService[SimpleServiceConfiguration] {
     environment.addResource(new HelloWorldResource(configuration template, configuration defaultName))
     environment.addHealthCheck(new TemplateHealthCheck(configuration template))
   }
-
 }
