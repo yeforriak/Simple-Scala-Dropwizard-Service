@@ -6,18 +6,18 @@ This is the dropwizard example service ( http://dropwizard.codahale.com/getting-
 Running it with maven:
 ---------------------
 
-$ mvn scala:run
+> $ mvn scala:run
 
 Packaging and running the from the jar:
 
-$ mvn package
+> $ mvn package
 
-$ java -jar ./target/dropwizard-scala-service-1.0-SNAPSHOT.jar server
+> $ java -jar ./target/dropwizard-scala-service-1.0-SNAPSHOT.jar server
 
 Running it with sbt
 -------------------
 
-sbt
+> $ sbt
 
 > run server
 
